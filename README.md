@@ -5,9 +5,9 @@ Configurer les Enregistrements DNS
 #### Connectez-vous à votre service de gestion DNS (ex : Route 53).
 
 Configurer les Enregistrements A
-Type: A 
-Nom: mounka.net et www.mounka.net 
-Valeur: [Votre adresse IP publique du serveur] 
+####Type: A 
+####Nom: mounka.net et www.mounka.net 
+####Valeur: [Votre adresse IP publique du serveur] 
 
 # SCRIPT ou STEP by STEP
 ## I. SCRIPT
@@ -118,10 +118,10 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] </IfModule>
 
 ### 8. Configurer les URLs dans WordPress
 Accéder à l’Admin WordPress
-#### Connectez-vous à votre tableau de bord WordPress via https://mounka.net/wp-admin. 
+#### Connectez-vous à votre tableau de bord WordPress via https://nomdedomaine/wp-admin. 
 
 Vérifiez les URLs
-#### Allez à Réglages > Général et assurez-vous que les URLs sont définies sur https://mounka.net pour Adresse Web de WordPress (URL) et Adresse Web du Site (URL).
+#### Allez à Réglages > Général et assurez-vous que les URLs sont définies sur https://nomdedomaine pour Adresse Web de WordPress (URL) et Adresse Web du Site (URL).
 
 
 ### 9. Validation 
@@ -130,8 +130,8 @@ Accédez à [https://mounka.net] pour vérifier que le site est accessible via H
 
 Remarques Pour plus d’informations sur la gestion des certificats SSL avec Certbot, consultez la documentation suivantes :
 
-- [Awesome README](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04-fr)
-- [Awesome README](https://youtu.be/8Uofkq718n8?si=49Qmbl8UtRHLUGeB)
+- [Link1 digitalocean](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04-fr)
+- [Link2 youtube](https://youtu.be/8Uofkq718n8?si=49Qmbl8UtRHLUGeB)
 
 
 Pour résoudre les problèmes liés à l’installation d’Apache, WordPress ou Certbot, vérifiez les journaux des erreurs ou consultez les forums de support.
