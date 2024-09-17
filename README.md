@@ -4,10 +4,13 @@
 Configurer les Enregistrements DNS
 #### Connectez-vous à votre service de gestion DNS (ex : Route 53).
 
-Configurer les Enregistrements A
-####Type: A 
-####Nom: mounka.net et www.mounka.net 
-####Valeur: [Votre adresse IP publique du serveur] 
+Configurer les Enregistrements A :
+
+.Type: A 
+
+.Nom: mounka.net et www.mounka.net 
+
+.Valeur: [Votre adresse IP publique du serveur] 
 
 # SCRIPT ou STEP by STEP
 ## I. SCRIPT
