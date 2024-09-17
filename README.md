@@ -2,30 +2,30 @@
 ### 1. Préparation du Serveur
 
 Connexion au Serveur
-```http
+```
   ssh your_user@your_server_ip
 ```
 Mettre à jour les Paquets
-```http
+```
   sudo apt-get update sudo apt-get upgrade -y
 ```
 
 ### 2. Installation d’Apache, MariaDB et PHP
 
 Installer Apache, MariaDB et PHP
-```http
+```
   sudo apt-get install -y apache2 mariadb-server php php-mysql libapache2-mod-php php-cli php-curl php-zip php-gd php-mbstring php-xml php-soap
 ```
 Démarrer les Services
-```http
+```
   sudo systemctl start apache2 sudo systemctl start mariadb
 ```
 ### 3. Configurer MariaDB
-```http
+```
   sudo mysql_secure_installation
 ```
 Créer une Base de Données et un Utilisateur pour WordPress
-```http
+```
   CREATE DATABASE wordpress; 
   CREATE USER 'wpuser'@'localhost' IDENTIFIED BY 'wppassword';   
   GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost';   
@@ -34,11 +34,11 @@ Créer une Base de Données et un Utilisateur pour WordPress
 ```
 ### 4. Installer et Configurer WordPress 
 Télécharger et Extraire WordPress
-```http
+```
   wget https://wordpress.org/latest.tar.gz tar -xzvf latest.tar.gz
 ```
 Déplacer les Fichiers WordPress
-```http
+```
   sudo rsync -av wordpress/ /var/www/html/
 ```
 Définir les Permissions
@@ -49,7 +49,7 @@ Définir les Permissions
 ```
 ### 5. Configurer Apache pour WordPress
 Créer un Fichier de Configuration Apache
-```http
+```
   sudo nano /etc/apache2/sites-available/wordpress.conf
 ```
 Ajouter la Configuration 👇🏽 dans wordpress.conf
