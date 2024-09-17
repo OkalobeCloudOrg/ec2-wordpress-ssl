@@ -1,4 +1,21 @@
+# Configuration ssl sur apache avec wordpress
 
+### 0. Configurer les Enregistrements DNS
+Configurer les Enregistrements DNS
+#### Connectez-vous à votre service de gestion DNS (ex : Route 53).
+
+Configurer les Enregistrements A
+Type: A 
+Nom: mounka.net et www.mounka.net 
+Valeur: [Votre adresse IP publique du serveur] 
+
+# SCRIPT ou STEP by STEP
+## I. SCRIPT
+
+- [script](https://github.com/OkalobeCloudOrg/ec2-wordpress-ssl/blob/main/script.sh)
+
+
+## II. STEP by STEP
 ### 1. Préparation du Serveur
 
 Connexion au Serveur
@@ -106,15 +123,8 @@ Accéder à l’Admin WordPress
 Vérifiez les URLs
 #### Allez à Réglages > Général et assurez-vous que les URLs sont définies sur https://mounka.net pour Adresse Web de WordPress (URL) et Adresse Web du Site (URL).
 
-### 9. Configurer les Enregistrements DNS
-Configurer les Enregistrements DNS
-#### Connectez-vous à votre service de gestion DNS (ex : Route 53).
 
-Configurer les Enregistrements A
-Type: A 
-Nom: mounka.net et www.mounka.net 
-Valeur: [Votre adresse IP publique du serveur] 
-### 10. Validation 
+### 9. Validation 
 Accédez à [https://mounka.net] pour vérifier que le site est accessible via HTTPS. 
 ####Assurez-vous que toutes les redirections fonctionnent correctement et que le certificat SSL est valide. 
 
