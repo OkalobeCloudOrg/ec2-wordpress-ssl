@@ -1,6 +1,6 @@
 # Configuration ssl sur apache avec wordpress
 
-### 0. Configurer les Enregistrements DNS
+## 0. Configurer les Enregistrements DNS
 Configurer les Enregistrements DNS
 #### Connectez-vous à votre service de gestion DNS (ex : Route 53).
 
